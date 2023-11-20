@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
+import { Component } from "react";
+import { redirect } from "react-router-dom";
 
 class Logout extends Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class Logout extends Component {
   }
 
   render() {
-    return <Redirect to="/" />;
+    return redirect("/");
   }
 }
 

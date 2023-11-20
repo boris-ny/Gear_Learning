@@ -7,10 +7,7 @@ import PropTypes from "prop-types";
 
 // ... rest of your code
 
-TestNavbar.propTypes = {
-  testLength: PropTypes.number.isRequired,
-  situationNo: PropTypes.number.isRequired,
-};
+
 
 const TestNavbar = ({ situationNo, testLength }) => {
   return (
@@ -43,6 +40,11 @@ const TestNavbar = ({ situationNo, testLength }) => {
       </Navbar.Collapse>
     </Navbar>
   );
+};
+
+TestNavbar.propTypes = {
+  testLength: PropTypes.number.isRequired,
+  situationNo: PropTypes.number.isRequired,
 };
 
 export default TestNavbar;

@@ -15,6 +15,7 @@ class CommentApp extends Component {
     this.state = {
       comments: [],
       loading: false,
+      
     };
 
     this.addComment = this.addComment.bind(this);
@@ -55,7 +56,6 @@ class CommentApp extends Component {
         fluid
         id="comment-part"
         className="App  shadow mt-5"
-        maxHeight="80%"
         overflow="scroll"
       >
         <Row>

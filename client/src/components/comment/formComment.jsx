@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-formComment.propTypes = {
-  addComment: PropTypes.func.isRequired,
-};
-
-export default class formComment extends Component {
+export default class FormComment extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,7 +33,10 @@ export default class formComment extends Component {
         [name]: value,
       },
     });
-  };
+  }
+
+
+
 
   onSubmit(e) {
     // prevent default form submission
@@ -148,3 +147,6 @@ export default class formComment extends Component {
     );
   }
 }
+FormComment.propTypes = {
+  addComment: PropTypes.func.isRequired,
+};

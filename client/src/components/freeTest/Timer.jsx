@@ -1,18 +1,13 @@
-import { Component } from "react";
+import{ Component } from "react";
 import PropTypes from "prop-types";
 
-Timer.propTypes = {
-  minutes: PropTypes.number.isRequired,
-};
-
 export default class Timer extends Component {
-  state = {
-    minutes: 25,
-    seconds: 0,
-  };
   constructor(props) {
     super(props);
-    this.state.minutes = this.props.minutes;
+    this.state = {
+      minutes: this.props.minutes,
+      seconds: 0,
+    };
   }
 
   componentDidMount() {
@@ -56,3 +51,7 @@ export default class Timer extends Component {
     );
   }
 }
+
+Timer.propTypes = {
+  minutes: PropTypes.number.isRequired,
+};

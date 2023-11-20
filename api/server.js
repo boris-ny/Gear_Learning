@@ -1,8 +1,8 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const cookieParser = require("cookie-parser");
-const path = require("path");
-// const mongoose = require('./db/mongoose.js')
+import express from "express";
+import bodyParser from "body-parser";
+import cookieParser from "cookie-parser";
+import path from "path";
+// import mongoose from './db/mongoose.js'
 
 const app = express();
 
@@ -15,10 +15,15 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 // if user makes a request http://localhost:5000/api/home it will go to ./home/index.js
-app.use("/", require("./home"));
-app.use("/", require("./login/login.js"));
-app.use("/tests", require("./tests")); // ./tests/index.js
-app.use("/comment", require("./comment"));
-app.use("/users", require("./users"));
+import router from "./home/routes.js";
+app.use("/", router);
+import login from "./login/login.js";
+app.use("/", login);
+import index from "./tests/index.js"; // ./tests/index.js
+app.use("/tests", index);
+import  from "./comment/index.js";
+app.use("/comment", comment);
+import users from "./users";
+app.use("/users", users);
 
-module.exports = app;
+export default app;

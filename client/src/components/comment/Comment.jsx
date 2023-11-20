@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import userImage from "./user-default.png";
+import userImage from "../../assets/user-default.png";
 import PropTypes from "prop-types";
 
 Comment.propTypes = {

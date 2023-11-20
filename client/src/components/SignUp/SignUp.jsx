@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-import { Redirect } from "react-router";
+import { redirect } from "react-router-dom";
 import useInput from "./useInput";
 import FormFields from "./Formfields";
 
@@ -59,12 +59,14 @@ const SignUp = () => {
             console.error(err);
           }
         };
+  if (signedUp) { 
+    // window.location.href="/";
+          return redirect("/");
+  }
 
         return (
           <div>
-            {signedUp ? (
-              <Redirect to="/" />
-            ) : (
+        
               <div>
                 <Button variant="secondary ml-2" onClick={handleShow}>
                   Sign Up
@@ -104,7 +106,7 @@ const SignUp = () => {
                   </Modal.Body>
                 </Modal>
               </div>
-            )}
+          
           </div>
         );
       };

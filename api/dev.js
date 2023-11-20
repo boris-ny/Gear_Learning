@@ -2,14 +2,14 @@
 
 import express from 'express';
 const devServer = express();
-import api from './server.js';
+import app from './server.js';
 
 devServer.use((req, res, next) => {
   console.log(req.method + ': ' + req.path);
   next();
 });
 
-devServer.use('/api', api);
+devServer.use('/api', app);
 
 devServer.get('/', (req, res) => {
   res.send('frontend');

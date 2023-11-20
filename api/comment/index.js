@@ -1,1 +1,1 @@
-module.exports = require('./routes');
+export { default } from "./routes";

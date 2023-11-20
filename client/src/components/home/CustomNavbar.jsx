@@ -8,8 +8,8 @@ import {
   FormControl,
   Button,
   Badge,
+  Container,
 } from "react-bootstrap";
-import { Redirect } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LoginForm from "./LoginComponent";
 import Signup from "../SignUp/SignUp";
@@ -30,6 +30,7 @@ class CustomNavbar extends Component {
       password: "",
       loggedIn,
     };
+   
 
     this.login = this.login.bind(this);
     this.onChange = this.onChange.bind(this);
@@ -72,6 +73,7 @@ class CustomNavbar extends Component {
           variant="dark"
           className="mb-5"
         >
+          <Container>
           <Navbar.Brand href="/" active="true">
             <Image src="/assets/logof.png" height="50vh" width="50vw" />
           </Navbar.Brand>
@@ -100,6 +102,7 @@ class CustomNavbar extends Component {
               logout
             </Button>
           </Navbar.Collapse>
+        </Container>
         </Navbar>
       );
     } else {
@@ -112,20 +115,24 @@ class CustomNavbar extends Component {
           expand="lg"
           fixed="top"
           variant="dark"
-          className="mb-5"
-        >
+          className="mb-5">
           <Navbar.Brand href="/" active="true">
-            <Image src="/assets/logof.png" height="50vh" width="50vw" />
+            <Image src="../../assets/logof.png" height="50vh" width="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
+            <Nav className="mr-auto d-flex" style={{}}>
               <Nav.Link href="/tutorials">Tutorials</Nav.Link>
               <Nav.Link href="/drivingTips">Driving Tips</Nav.Link>
               <Nav.Link href="/freetest">Take Practice Test</Nav.Link>
               <Nav.Link href="/contactUs">Contact Us</Nav.Link>
             </Nav>
-            <Form inline>
+            <Form
+              className="d-flex"
+              style={{
+                position: "absolute",
+                right: "0",
+              }}>
               <FormControl
                 type="text"
                 name="username"
@@ -144,10 +151,16 @@ class CustomNavbar extends Component {
                 onChange={this.onChange}
                 required
               />
-              <Button variant="secondary" className= "auth-Button" onClick={this.login}>
+              <Button
+                variant="secondary"
+                className="auth-Button"
+                onClick={this.login}>
                 Log In
               </Button>
-              <Button variant="secondary" className="auth-Button" href="/signup">
+              <Button
+                variant="secondary"
+                className="auth-Button"
+                href="/signup">
                 {" "}
                 ☞ Register
               </Button>
