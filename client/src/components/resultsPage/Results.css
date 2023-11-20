@@ -1,0 +1,16 @@
+.result-part {
+  margin: 0;
+  font-family: "Rowdies", cursive;
+  font-size: 1.3rem;
+  min-height: 100%;
+  position: relative;
+}
+.picture-part {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.image-border {
+  border-radius: 20px;
+}

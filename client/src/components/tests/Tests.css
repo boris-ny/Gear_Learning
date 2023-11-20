@@ -1,0 +1,38 @@
+.tests-part {
+  min-height: 100%;
+  position: relative;
+  margin: 0;
+  padding-top: 5%;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 130%;
+  font-weight: 600;
+  background-color: rgb(227, 228, 231);
+  color: rgb(35, 42, 56);
+}
+.image-part {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(241, 242, 247);
+  border-radius: 50px;
+  margin: 40px;
+}
+.extra-part {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.middle {
+  background-color: white;
+  border-radius: 50px 20px;
+  color: rgb(35, 42, 56);
+}
+.head-tests {
+  font-size: 4rem;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+.text-tests {
+  font-style: italic;
+}
