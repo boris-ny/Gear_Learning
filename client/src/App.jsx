@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // eslint-disable-next-line no-unused-vars
 import React, { Component } from "react";
 import {
@@ -25,13 +26,13 @@ class App extends Component {
         <Routes>
           <Route path="/" element={<Landing/>} />
           <Route path="/freetest" element={<FreeTest/>} />
-          <Route path="/results" element={<Result/>} />
-          <Route path="/oneResultPage" element={<OneResultPage/>} />
+          {/* <Route path="/results" element={<Result/>} /> */}
+          {/* <Route path="/oneResultPage" element={<OneResultPage/>} /> */}
           <Route path="/tutorials" element={<Tutorials/>} />
           <Route path="/drivingTips" element={<DrivingTips/>} />{" "}
           <Route path="/newUser" element={<RegisterForm/>} />{" "}
           <Route path="/contactUs" element={<ContactUs/>} />
-          <Route path="/tests" element={<Tests/>} />
+          {/* <Route path="/tests" element={<Tests/>} /> */}
           <Route path="/login" element={<Login/>} />{" "}
           <Route path="/logout" element={<Logout/>} />
           <Route  path="/signup" element={<RegisterForm/>} />

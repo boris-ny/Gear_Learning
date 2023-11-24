@@ -1,6 +1,4 @@
-import React, { Component } from "react";
-import { Modal, Button } from "react-bootstrap";
-import ReactDOM from "react-dom";
+import { Component } from "react";
 import { redirect } from "react-router-dom";
 import CustomNavbar from "../home/CustomNavbar";
 import Footer from "../home/Footer";
@@ -43,7 +41,7 @@ class RegisterForm extends Component {
       fields["secretanswer"] = "";
       this.setState({ fields: fields });
 
-      const res = fetch("/api/users/", {
+      fetch("http://localhost:6000/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",

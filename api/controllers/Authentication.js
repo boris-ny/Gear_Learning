@@ -1,4 +1,4 @@
-const jwt = require("jsonwebtoken");
+import  jwt from "jsonwebtoken";
 const secret = "mysecretsshhh";
 
 const withAuth = function (req, res, next) {
@@ -22,4 +22,4 @@ const withAuth = function (req, res, next) {
   }
 };
 
-module.exports = withAuth;
+export default withAuth;

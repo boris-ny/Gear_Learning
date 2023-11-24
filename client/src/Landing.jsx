@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Picture from "./components/home/Picture";
 import Cards from "./components/home/Cards";
 import Practice from "./components/home/Practice";
@@ -15,7 +15,7 @@ export default class Landing extends Component {
   }
 
   componentDidMount() {
-    fetch("/api/home")
+    fetch("http://localhost:6000/")
       .then((res) => res.text())
       .then((res) => this.setState({ message: res }));
   }
@@ -26,7 +26,7 @@ export default class Landing extends Component {
         <CustomNavbar />
         <Picture />
         <Cards />
-        {/* <Practice /> */}
+        <Practice />
         <CommentApp />
         <Footer />
       </>
