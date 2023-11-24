@@ -1,29 +1,41 @@
+import dotenv from "dotenv";
 import express from "express";
-import bodyParser from "body-parser";
+import sequelize from "./config/database.js";
+import indexRouter from "./routes/index.routes.js";
 import cookieParser from "cookie-parser";
-import path from "path";
-// import mongoose from './db/mongoose.js'
+import bodyParser from "body-parser";
+import { errors } from "celebrate";
+import cors from "cors";
 
+// For env File
+dotenv.config();
 const app = express();
+/**
+ * The port number for the server to listen on.
+ * If the PORT environment variable is set, it will use that value.
+ * Otherwise, it will default to 6000.
+ */
+const port = 6000;
 
-const secret = "mysecretsshhh";
+// Authenticate the connection to the database
+sequelize.authenticate();
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+// Add middleware to parse incoming requests with JSON payloads
+app.use(express.json());
 app.use(cookieParser());
+app.use(bodyParser.json());
+app.use(cors());
 
-app.use(express.static(path.join(__dirname, "public")));
+// Add routes
+app.use("/", indexRouter);
+// Add middleware to handle errors
+app.use(errors());
+app.use((_req, res) => {
+  return res.status(500).send("Something broke!");
+});
 
-// if user makes a request http://localhost:5000/api/home it will go to ./home/index.js
-import router from "./home/routes.js";
-app.use("/", router);
-import login from "./login/login.js";
-app.use("/", login);
-import index from "./tests/index.js"; // ./tests/index.js
-app.use("/tests", index);
-import  from "./comment/index.js";
-app.use("/comment", comment);
-import users from "./users";
-app.use("/users", users);
+app.listen(port, () => {
+  console.log(`Server is running on port: ${port}`);
+});
 
 export default app;

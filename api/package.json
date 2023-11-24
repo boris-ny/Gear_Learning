@@ -1,30 +1,28 @@
 {
   "name": "gearlearning",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run dev-api\" \"npm run dev-client\"",
-    "dev-api": "nodemon api/dev.js",
+    "dev-api": "nodemon server.js",
     "dev-client": "cd client && yarn dev",
-    "start": "node index.js",
-    "test": "cd api && jest --collectCoverage=true --forceExit",
-    "test:watch": "cd api && jest --watch --collectCoverage=true --runInBand --detectOpenHandles"
+    "start": "node server.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
+    "celebrate": "^15.0.3",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
+    "sequelize": "^6.33.0",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.6"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2",
-    "nodemon": "^3.0.1",
-    "supertest": "^6.3.3"
+    "nodemon": "^3.0.1"
   }
 }
