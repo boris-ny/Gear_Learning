@@ -38,7 +38,7 @@ class CustomNavbar extends Component {
 
   login = async () => {
     const values = this.state;
-    const result = await fetch("/api/users/login", {
+    const result = await fetch("http://localhost:6000/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",

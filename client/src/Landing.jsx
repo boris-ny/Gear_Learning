@@ -26,7 +26,7 @@ export default class Landing extends Component {
         <CustomNavbar />
         <Picture />
         <Cards />
-        <Practice />
+        {/* <Practice /> */}
         <CommentApp />
         <Footer />
       </>

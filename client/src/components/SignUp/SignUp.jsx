@@ -27,7 +27,7 @@ const SignUp = () => {
         // Send all the input to backend via axios post request
         const submitForm = async () => {
           try {
-            const res = await fetch("/api/users", {
+            const res = await fetch("http://localhost:6000/register", {
               method: "POST",
               body: JSON.stringify({
                 firstName: firstName.value,

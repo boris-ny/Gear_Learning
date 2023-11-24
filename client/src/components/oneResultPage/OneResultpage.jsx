@@ -5,6 +5,7 @@ import "./OneResultpage.css";
 import OneResultPageNavbar from "./OneResultNavbar";
 import Footer from "../home/Footer";
 
+// eslint-disable-next-line no-unused-vars
 const OneResultPage = (_props) => {
   const [situationNumber, setSituationNumber] = useState("");
   const [situation, setSituation] = useState([]);
@@ -81,7 +82,7 @@ const OneResultPage = (_props) => {
                   el.testName === test_name
               )
               .map((img) => (
-                <div className="test-part">
+                <div className="test-part" key={img.id}>
                   <Image
                     src={img.fileRelativePath} //{situation_img.image}
                     rounded
