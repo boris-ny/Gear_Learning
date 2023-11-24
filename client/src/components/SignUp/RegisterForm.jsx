@@ -41,7 +41,7 @@ class RegisterForm extends Component {
       fields["secretanswer"] = "";
       this.setState({ fields: fields });
 
-      fetch("http://localhost:6000/users", {
+      fetch("http://localhost:6000/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",

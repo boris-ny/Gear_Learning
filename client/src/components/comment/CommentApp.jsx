@@ -26,7 +26,7 @@ class CommentApp extends Component {
     this.setState({ loading: true });
 
     // get all the comments
-    fetch("/api/comment/")
+    fetch("http://localhost:6000/api/comments")
       .then((res) => res.json())
       .then((res) => {
         this.setState({
