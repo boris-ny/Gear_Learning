@@ -9,7 +9,7 @@ const ContactUs = () => {
     <>
       <CustomNavbar />
       <h1 className="header-contact">WebWinners Driving School</h1>
-      <Row xs={10} className="justify-content-center m-5">
+      {/* <Row xs={10} className="justify-content-center m-5">
         <iframe
           scrolling="no"
           marginHeight="0"
@@ -25,7 +25,7 @@ const ContactUs = () => {
           type="text/javascript"
           src="https://embedmaps.com/google-maps-authorization/script.js?id=683425cbbe6092d39b7cb7b715999de9c38d5c31"
         ></script>
-      </Row>
+      </Row> */}
       <ContactPart />
       <Footer />
     </>

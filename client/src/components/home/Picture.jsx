@@ -17,7 +17,7 @@ const Picture = () => {
       </Row>
       <a href="#cards-part">
         <Image
-          src="../public/assets/bottom.png"
+          src="../assets/bottom.png"
           className="go d-none d-xl-block"
           roundedCircle
         />

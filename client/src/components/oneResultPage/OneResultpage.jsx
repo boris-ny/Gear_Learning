@@ -100,7 +100,7 @@ const OneResultPage = (_props) => {
             ))}
           </Col>
         </Row>
-        {questions.map((question, id) => (
+        {questions.map((question) => (
           <Row
             className="question-part-result"
             key={question.questionId}
