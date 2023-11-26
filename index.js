@@ -16,10 +16,8 @@ const mongoURI = process.env.DB_URL;
 
 async function connectToDatabase() {
   try {
-    await mongoose.connect(mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    mongoose.set("strictQuery", false);
+    await mongoose.connect(mongoURI);
     console.log("Connected to MongoDB");
   } catch (error) {
     console.error("Error connecting to MongoDB:", error);
