@@ -15,7 +15,7 @@ function Question() {
     // Implement logic to submit the answer and move to the next question
     // For simplicity, let's redirect to the next question
     const nextQuestionId = parseInt(id, 10) + 1;
-    navigate.push(`/question/${nextQuestionId}`);
+    navigate(`/question/${nextQuestionId}`);
   };
 
   return (
