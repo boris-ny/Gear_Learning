@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Question from "./pages/Question";
 import Result from "./pages/Result";
 import NavHeader from "./components/Navbar";
-import Tutorials from "./pages/Tutorials";
+import Videos from "./pages/Videos";
 import Flashcards from "./pages/Flashcards";
 import Footer from "./components/Footer";
 
@@ -15,13 +15,13 @@ function App() {
       <NavHeader />
       <div>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />}/>
           <Route path="/question/:id" element={<Question />} />
           <Route path="/result" element={<Result />} />
-          <Route path="/tutorials" element={<Tutorials />} />
-          <Route path ="/flashcards" element = {<Flashcards/>}/>
+          <Route path="/videos" element={<Videos />} />
+          <Route path="/flashcards" element={<Flashcards />} />
         </Routes>
-       <Footer/> 
+        <Footer />
       </div>
     </Router>
   );

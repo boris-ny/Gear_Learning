@@ -85,6 +85,13 @@ const Flashcards = () => {
       image:
         "https://www.hseblog.com/wp-content/uploads/2023/08/No-OvertakingPassing-Road-Signs.webp",
     },
+    {
+      title: "Parking Area",
+      description:
+        "Simply put, this sign indicates a designated area where vehicles can park. These areas are earmarked for vehicle stops, ensuring drivers have a safe spot to leave without obstructing traffic or causing safety hazards. Depending on the specific area and regulations, they may be temporary stops or longer-term parking zones.",
+      image:
+        "https://www.hseblog.com/wp-content/uploads/2023/08/Parking-Area-Road-Signs.webp",
+    },
   ];
   return (
     <>

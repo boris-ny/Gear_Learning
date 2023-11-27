@@ -12,8 +12,8 @@ const Home = () => {
               className="d-block mx-lg-auto"
               alt="driving"
               loading="lazy"
-                          fluid
-                          rounded
+              fluid
+              rounded
             />
           </div>
           <div className="col-lg-6">
