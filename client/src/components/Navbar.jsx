@@ -23,8 +23,8 @@ function NavHeader() {
             <Nav.Link href="/videos" className="fs-4">
               Videos
             </Nav.Link>
-            <Nav.Link href="/questions" className="fs-4">
-              Tests
+            <Nav.Link href="/quizzes" className="fs-4">
+              Quizzes
             </Nav.Link>
           </Nav>
         </Container>
