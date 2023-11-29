@@ -1,22 +1,22 @@
 export const Quizzdata = [
-    {
-      id:1,
+  {
+    id: 1,
     topic: "Road Signs",
-    Questions: [
+    questions: [
       {
         title: "What does this sign mean?",
-        Options: [
+        options: [
           "HumpBridge",
           "Services",
-          "Quayside or RiverBank",
+          "Quayside or River Bank",
           "Tunnel Ahead",
         ],
-        Answer: "HumpBridge",
+        answer: "HumpBridge",
         img: "https://www.achoiceinsurance.co.uk/wp-content/uploads/2022/04/hump-bridge-road-sign.jpg",
       },
       {
         title: "What does this sign mean?",
-        Options: [
+        options: [
           "No Speeding",
           "National Speed Limit Applies",
           "40 miles per hour maximum speed limit",
@@ -27,13 +27,13 @@ export const Quizzdata = [
       },
       {
         title: " What does this sign mean?",
-        Options: ["No Stopping", "No Parking", "No Waiting", "No Entry"],
+        options: ["No Stopping", "No Parking", "No Waiting", "No Entry"],
         Answer: "No Entry",
         img: "https://www.achoiceinsurance.co.uk/wp-content/uploads/2022/04/no-stopping-road-sign.jpg",
       },
       {
         title: "What does this sign mean?",
-        Options: [
+        options: [
           "No footway",
           "Pedestrians Crossing",
           "No Pedestrians",
@@ -44,13 +44,13 @@ export const Quizzdata = [
       },
       {
         title: "What does this sign mean?",
-        Options: ["Round About", "Keep Left", "One Way Traffic", "Ahead Only"],
+        options: ["Round About", "Keep Left", "One Way Traffic", "Ahead Only"],
         Answer: "Round About",
         img: "https://www.achoiceinsurance.co.uk/wp-content/uploads/2022/04/mini-roundabout-road-sign.jpg",
       },
       {
         title: "What does this sign mean?",
-        Options: [
+        options: [
           "Slow Wet Tar",
           "Winding Road",
           "Road Works",
@@ -61,7 +61,7 @@ export const Quizzdata = [
       },
       {
         title: "What does this sign mean?",
-        Options: [
+        options: [
           "Uneven Road",
           "Dual Carriage Ends",
           "Road Narrows on Right Side",
@@ -72,7 +72,7 @@ export const Quizzdata = [
       },
       {
         title: "What does this sign mean?",
-        Options: [
+        options: [
           "Give Way to oncoming traffic",
           "One Way Road",
           "No Overtaking",

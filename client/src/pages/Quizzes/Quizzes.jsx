@@ -2,7 +2,7 @@
 import { Button, Container } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Accordion from "react-bootstrap/Accordion";
-import { propTypes } from "react-bootstrap/esm/Image";
+
 import { Quizzdata } from "../../utils/Quizzdata";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -77,8 +77,8 @@ const Quizzes = () => {
   );
 };
 
-Quizzes.propTypes = {
-  name: propTypes.string,
-  title: propTypes.string,
-};
+// Quizzes.propTypes = {
+//   name: propTypes.string,
+//   title: propTypes.string,
+// };
 export default Quizzes;
