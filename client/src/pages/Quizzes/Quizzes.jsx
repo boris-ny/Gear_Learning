@@ -28,7 +28,7 @@ const Quizzes = () => {
   return (
     <>
       <Container style={{
-        minHeight: "71vh",
+        minHeight: "74vh",
       }}
       >
         <h1 className="mt-4 d-flex justify-content-center">

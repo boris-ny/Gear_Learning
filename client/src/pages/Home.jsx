@@ -30,12 +30,12 @@ const Home = () => {
                 type="button"
                 className="btn btn-primary btn-lg px-4 me-md-2">
                 <Link
-                  to={"/Tutorials"}
+                  to={"/flashcards"}
                   style={{
                     color: "white",
                     textDecoration: "none",
                   }}>
-                  Tutorials
+                  Flashcards
                 </Link>
               </button>
               <button
