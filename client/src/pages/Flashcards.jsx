@@ -100,7 +100,7 @@ const Flashcards = () => {
           <span className="badge text-bg-info">FLASH CARDS</span>
         </h1>
       </Container>
-      <Container className="mt-5 px-auto mx-auto">
+      <Container className="my-5 px-auto mx-auto">
         <Row className="">
           {items.map((item, index) => (
             <Col key={index} lg="3" className="mt-4">
