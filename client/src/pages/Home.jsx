@@ -42,7 +42,7 @@ const Home = () => {
                 type="button"
                 className="btn btn-outline-secondary btn-lg px-4">
                 <Link
-                  to={"/questions"}
+                  to={"/quizzes"}
                   style={{
                     color: "black",
                     textDecoration: "none",
