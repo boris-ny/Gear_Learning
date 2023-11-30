@@ -1,15 +1,11 @@
 /* eslint-disable react/prop-types */
 import { Form, Image } from "react-bootstrap";
 
-
-
-
 const Quizzquestion = (props) => {
-  
   const handleOptionChange = (e) => {
     let score = 0;
     let answer = e.target.value;
-    
+
     if (answer === props.questions[0].answer) {
       score += 1;
     } else {
@@ -17,8 +13,6 @@ const Quizzquestion = (props) => {
     }
     console.log(score);
   };
-  
- 
 
   if (!props.questions || props.questions.length === 0) {
     return null;
