@@ -8,7 +8,7 @@ import Result from "./pages/Result";
 import NavHeader from "./components/Navbar";
 import Videos from "./pages/Videos";
 import Flashcards from "./pages/Flashcards";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route path="/videos" element={<Videos />} />
           <Route path="/flashcards" element={<Flashcards />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );

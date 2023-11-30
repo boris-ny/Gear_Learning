@@ -4,6 +4,7 @@ export const Quizzdata = [
     topic: "Road Signs",
     questions: [
       {
+        id: 1,
         title: "What does this sign mean?",
         options: [
           "HumpBridge",
@@ -15,6 +16,7 @@ export const Quizzdata = [
         img: "https://www.achoiceinsurance.co.uk/wp-content/uploads/2022/04/hump-bridge-road-sign.jpg",
       },
       {
+        id: 2,
         title: "What does this sign mean?",
         options: [
           "No Speeding",
@@ -22,16 +24,18 @@ export const Quizzdata = [
           "40 miles per hour maximum speed limit",
           "30 miles per hour maximum speed limit",
         ],
-        Answer: "National Speed Limit Applies",
+        answer: "National Speed Limit Applies",
         img: "https://www.achoiceinsurance.co.uk/wp-content/uploads/2022/04/national-speed-limit-road-sign.jpg",
       },
       {
+        id: 3,
         title: " What does this sign mean?",
         options: ["No Stopping", "No Parking", "No Waiting", "No Entry"],
-        Answer: "No Entry",
+        answer: "No Entry",
         img: "https://www.achoiceinsurance.co.uk/wp-content/uploads/2022/04/no-stopping-road-sign.jpg",
       },
       {
+        id: 4,
         title: "What does this sign mean?",
         options: [
           "No footway",
@@ -39,16 +43,18 @@ export const Quizzdata = [
           "No Pedestrians",
           "No Entry",
         ],
-        Answer: "Pedestrians Crossing",
+        answer: "Pedestrians Crossing",
         img: "https://www.achoiceinsurance.co.uk/wp-content/uploads/2022/04/zebra-crossing-road-sign.jpg",
       },
       {
+        id: 5,
         title: "What does this sign mean?",
         options: ["Round About", "Keep Left", "One Way Traffic", "Ahead Only"],
-        Answer: "Round About",
+        answer: "Round About",
         img: "https://www.achoiceinsurance.co.uk/wp-content/uploads/2022/04/mini-roundabout-road-sign.jpg",
       },
       {
+        id: 6,
         title: "What does this sign mean?",
         options: [
           "Slow Wet Tar",
@@ -56,10 +62,11 @@ export const Quizzdata = [
           "Road Works",
           "Slippery Road",
         ],
-        Answer: "Road Works",
+        answer: "Road Works",
         img: "https://www.achoiceinsurance.co.uk/wp-content/uploads/2022/04/road-works-road-sign.jpg",
       },
       {
+        id: 7,
         title: "What does this sign mean?",
         options: [
           "Uneven Road",
@@ -67,10 +74,11 @@ export const Quizzdata = [
           "Road Narrows on Right Side",
           "Road Narrows on Both Sides",
         ],
-        Answer: "Road Narrows on Both Sides",
+        answer: "Road Narrows on Both Sides",
         img: "https://www.achoiceinsurance.co.uk/wp-content/uploads/2022/04/road-narrows-on-both-sides-sign.jpg",
       },
       {
+        id: 8,
         title: "What does this sign mean?",
         options: [
           "Give Way to oncoming traffic",
@@ -78,7 +86,7 @@ export const Quizzdata = [
           "No Overtaking",
           "No Entry",
         ],
-        Answer: "Give Way to oncoming traffic",
+        answer: "Give Way to oncoming traffic",
         img: "https://www.achoiceinsurance.co.uk/wp-content/uploads/2022/04/give-way-to-oncoming-vehicles-road-sign.jpg",
       },
     ],
