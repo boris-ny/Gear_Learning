@@ -62,8 +62,8 @@ export const Quizzdata = [
           "Road Works",
           "Slippery Road",
         ],
-        answer: "Road Works",
-        img: "https://www.achoiceinsurance.co.uk/wp-content/uploads/2022/04/road-works-road-sign.jpg",
+        answer: "Slippery Road",
+        img: "https://www.hseblog.com/wp-content/uploads/2023/08/Slippery-When-Wet-Road-Signs.webp",
       },
       {
         id: 7,
