@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useTimer } from "react-timer-hook";
+import TimerStyled from "./TimerStyled";
 
 const Timer = (props) => {
   const { seconds, minutes } = useTimer({
@@ -10,7 +11,7 @@ const Timer = (props) => {
 
   return (
     <>
-      <div><span>{minutes}</span><span>{seconds}</span></div>
+      <TimerStyled  seconds={seconds} minutes={minutes}/>
     </>
   );
 };

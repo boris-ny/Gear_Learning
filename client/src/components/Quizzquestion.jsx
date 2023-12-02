@@ -63,12 +63,14 @@ const Quizzquestion = (props) => {
           </div>
         </div>
       ))}
-      <button
-        onClick={submitResult}
-        type="submit"
-        className="btn btn-primary mb-3 btn-lg">
-        Submit
-      </button>
+      <div className="d-flex justify-content-center">
+        <button
+          onClick={submitResult}
+          type="submit"
+          className="btn btn-primary mb-3 btn-lg">
+          Submit
+        </button>
+      </div>
     </>
   );
 };

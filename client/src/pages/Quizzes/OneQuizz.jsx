@@ -3,7 +3,7 @@ import { Button, Container } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import { Quizzdata } from "../../utils/Quizzdata";
 import Quizzquestion from "../../components/Quizzquestion";
-import Timer from "../../components/Timer";
+import Timer from "../../components/Timer/Timer";
 import Swal from "sweetalert2";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
