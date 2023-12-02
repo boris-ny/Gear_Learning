@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+ 
 import { Button, Container } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
 import { Quizzdata } from "../../utils/Quizzdata";

@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+ 
 import { Button, Container } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import { Quizzdata } from "../../utils/Quizzdata";
